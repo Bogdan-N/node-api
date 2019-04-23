@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "description": "my personal rest api node.js server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon idnex.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bogdan-N/node-api.git"
+  },
+  "author": "Bogdan-N",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bogdan-N/node-api/issues"
+  },
+  "homepage": "https://github.com/Bogdan-N/node-api#readme",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0"
+  }
+}
