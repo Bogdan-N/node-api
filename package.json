@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon idnex.js"
+    "start": "nodemon idnex.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   "homepage": "https://github.com/Bogdan-N/node-api#readme",
   "dependencies": {
     "koa": "^2.7.0",
+    "koa-body": "^4.1.0",
+    "koa-cors": "0.0.16",
     "koa-logger": "^3.2.0",
     "koa-router": "^7.4.0"
   }

@@ -1,15 +1,14 @@
 const CONSTANTS = require("./app/constants");
-
 const Koa = require('koa');
-const Router = require('koa-router');
 const logger = require('koa-logger');
+const koaBody = require('koa-body');
+const router = require('./app/routes');
+const cors = require('koa-cors');
+
 const app = new Koa();
-const router = new Router();
 
-router.get('/', (ctx, next) => {
-  ctx.body = 'Hello World!';
-});
-
+app.use(cors());
+app.use(koaBody());
 app.use(router.routes());
 app.use(router.allowedMethods());
 app.use(logger());
